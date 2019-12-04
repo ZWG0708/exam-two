@@ -1,0 +1,52 @@
+
+let data=[
+    {
+        id:0,
+        img:"//dummyimage.com/70x70",
+        title:"我的同桌",
+        text:"作业",
+    },{
+        id:1,
+        img:"//dummyimage.com/70x70",
+        title:"我的同桌dfhn",
+        text:"作业wer",
+    },{
+        id:2,
+        img:"//dummyimage.com/70x70",
+        title:"我的同桌we",
+        text:"作业wr",
+    },{
+        id:3,
+        img:"//dummyimage.com/70x70",
+        title:"我的同桌avfa",
+        text:"作业wed",
+    },{
+        id:4,
+        img:"//dummyimage.com/70x70",
+        title:"我的af同桌a",
+        text:"作业qwe",
+    },{
+        id:5,
+        img:"//dummyimage.com/70x70",
+        title:"我的同桌",
+        text:"作业sd",
+    },{
+        id:6,
+        img:"//dummyimage.com/70x70",
+        title:"我的同桌",
+        text:"作业324",
+    }
+]
+
+module.exports={
+    devServer:{
+        before(app){
+            app.get('/api/list',(req,res)=>{
+                res.send({
+                    code:200,
+                    data,
+                })
+            })
+        }
+    }
+}
